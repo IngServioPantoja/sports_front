@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let athlete of athletes; let i= index;">
+      <th scope="row">{{i}}</th>
+      <td>{{athlete.id}}</td>
+      <td>{{athlete.name}}</td>
+      <td>{{athlete.age}}</td>
+    </tr>
+  </tbody>
+</table>

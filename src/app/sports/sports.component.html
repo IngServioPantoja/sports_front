@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sport of sports; let i= index;">
+      <th scope="row">{{i}}</th>
+      <td>{{sport.id}}</td>
+      <td>{{sport.name}}</td>
+      <td><button type="button" class="btn btn-info" (click)="showAthletes()">Show athletes</button></td>
+    </tr>
+  </tbody>
+</table>
+<br><br>
+<app-athletes *ngIf="athletesActive"></app-athletes>
